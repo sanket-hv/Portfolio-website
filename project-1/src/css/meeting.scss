@@ -1,0 +1,80 @@
+.meeting-section {
+    font-family: 'Poppins';
+    padding: 88px 0;
+    background-image: url('../assests/images/meeting/meeting-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    @media (max-width: 567px) {
+        padding: 0 0 60px !important;
+    }
+
+    @media (max-width: 991px) {
+        padding: 20px 0 60px;
+    }
+
+    .calender-img {
+        img {
+            @media (max-width: 567px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            text-align: end;
+        }
+    }
+
+    .meeting-contain {
+
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Poppins';
+            margin-bottom: 30px;
+            width: fit-content;
+
+            @media (max-width: 991px) {
+                text-align: center;
+                width: 100%;
+            }
+
+            @media (max-width: 567px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .book-meeting-button {
+            background: #2A9DF4;
+            border-radius: 29px;
+            padding: 14px 27px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+
+            @media (max-width: 991px) {
+                margin: 0 auto;
+            }
+
+            @media (max-width: 567px) {
+                padding: 10px 20px;
+            }
+        }
+
+        .book-meeting-button h5 {
+            margin: 0;
+            color: #FFFFFF;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 400;
+            padding-left: 14px;
+
+            @media (max-width: 567px) {
+                font-size: 17px;
+            }
+        }
+    }
+}

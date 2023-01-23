@@ -1,0 +1,69 @@
+// .client-say-section {
+//     margin: 126px 0 100px;
+//     padding: 31px 0 77px;
+//     font-family: 'Poppins';
+
+//     .client-say-main::after {
+//         content: '';
+//         position: absolute;
+//         background: #F6FAFF;
+//         border-radius: 20px;
+//         width: 871px;
+//         height: 416px;
+//         z-index: -2;
+//         margin-left: auto;
+//         margin-right: auto;
+//         left: 0;
+//         right: 0;
+//         top: 0;
+//     }
+
+//     h1 {
+//         margin-bottom: 31px;
+//         font-family: 'Poppins';
+//     }
+
+//     .client-say-main {
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+
+//         .client-say-bg {
+//             padding-left: 63px;
+//         }
+//     }
+
+//     .client-say-box {
+//         background: #FFFFFF;
+//         border-radius: 20px;
+//         box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.08);
+//         padding: 35px 34px;
+
+
+//         .client-name {
+//             display: flex;
+//             align-items: center;
+
+//             h5 {
+//                 color: #00244A;
+//                 font-size: 20px;
+//                 line-height: 30px;
+//                 font-weight: 600;
+//                 padding-left: 16px;
+//                 margin: 0;
+//             }
+
+//             p {
+//                 color: #474747;
+//                 font-size: 18px;
+//                 line-height: 27px;
+//                 font-weight: 400;
+//                 margin: 0;
+//             }
+            
+//         }
+//         .client-img {
+//             margin: 22px 0;
+//         }
+//     }
+// }

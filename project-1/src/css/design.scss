@@ -1,0 +1,256 @@
+    .creative-design-section {
+        background-color: #10253A;
+        font-family: 'Montserrat';
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 100px;
+        height: 1030px;
+
+        @media (max-width: 991px) {
+            height: 734px !important;
+            padding-top: 50px !important;
+        }
+
+        @media (max-width: 567px) {
+            height: 682px !important;
+        }
+
+        @media (max-width: 375px) {
+            height: 511px !important;
+            padding-top: 25px !important;
+        }
+
+        @media (max-width: 320px) {
+            height: 508px !important;
+        }
+
+        @media (max-width: 1440px) {
+            padding-top: 40px;
+            height: 675px;
+        }
+
+        .creative-design-img {
+            margin-top: 84px;
+            position: relative;
+
+            @media (max-width: 991px) {
+                margin-top: 134px;
+            }
+
+            @media (max-width: 567px) {
+                margin-top: 84px;
+            }
+
+            @media (max-width: 320px) {
+                margin-top: 48px;
+            }
+
+
+
+            img {
+                width: 100%;
+
+                @media (max-width: 1440px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                }
+
+
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../assests/images/create-design/design-img1.png');
+                width: 222px;
+                height: 222px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: -91px;
+                left: 110px;
+
+                @media (max-width: 991px) {
+                    left: -9px !important;
+                    height: 152px !important;
+                    width: 152px !important;
+                }
+
+                @media (max-width: 567px) {
+                    width: 122px !important;
+                    height: 122px !important;
+                }
+
+                @media (max-width: 1440px) {
+                    width: 152px;
+                    height: 152px;
+                    top: -71px;
+                    left: 282px;
+                }
+
+                @media (max-width: 375px) {
+                    width: 102px !important;
+                    height: 102px !important;
+                    top: -41px !important;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url('../assests/images/create-design/design-img2.png');
+                width: 222px;
+                height: 222px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: -27px;
+                right: 160px;
+
+                @media (max-width: 991px) {
+                    right: 40px !important;
+                    width: 132px !important;
+                    height: 132px !important;
+
+                }
+
+                @media (max-width: 567px) {
+                    right: 0 !important;
+                    width: 102px !important;
+                    height: 102px !important;
+                }
+
+                @media (max-width: 1440px) {
+                    right: 320px;
+                    width: 111px;
+                    height: 111px;
+                    top: 0;
+                }
+
+                @media (max-width: 375px) {
+                    width: 82px !important;
+                    height: 82px o !important;
+                }
+            }
+        }
+
+        .creative-design-main {
+
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url('../assests/images/create-design/creative-img-1.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 925px;
+                left: 0;
+                top: 0;
+
+              
+                @media (max-width: 1850px) {
+                    display: none;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../assests/images/create-design/creative-img-2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 925px;
+                right: -16px;
+                top: 0;
+
+                @media (max-width: 1850px) {
+                    display: none;
+                }
+            }
+        }
+
+        h1 {
+            color: #FFFFFF;
+
+            @media (max-width: 991px) {
+                font-size: 22px !important;
+                line-height: 35px !important;
+            }
+
+            @media (max-width: 567px) {
+                font-size: 16px !important;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 12px !important;
+                line-height: 24px !important;
+            }
+
+            @media (max-width: 1440px) {
+                font-size: 25px;
+                line-height: 40px;
+            }
+
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            padding: 30px 0 60px;
+            margin: 0;
+            width: 81%;
+            margin: 0 auto;
+
+            @media (max-width: 991px) {
+                font-size: 16px !important;
+                line-height: 32px !important;
+                padding: 30px 0 !important;
+                width: 100%;
+            }
+
+            @media (max-width: 375px) {
+                font-size: 12px !important;
+                line-height: 25px !important;
+                padding: 15px 0 !important;
+            }
+
+            @media (max-width: 1440px) {
+                font-size: 18px;
+                padding: 30px 0 40px;
+            }
+
+            @media (max-width: 567px) {
+                font-size: 12px !important;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 12px !important;
+            }
+
+
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 70px;
+            background: #2A9DF4;
+            box-shadow: 10px 14px 44px rgba(0, 0, 0, 0.07);
+            border-radius: 14px;
+            padding: 12px 36px;
+
+            @media (max-width: 567px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 14px;
+            }
+        }
+    }
