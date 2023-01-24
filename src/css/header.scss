@@ -1,0 +1,164 @@
+.bg-header {
+    width: 100%;
+    font-family: 'Montserrat';
+    background: #013a76;
+
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 36px;
+        padding-top: 36px 0;
+
+        .togglelist {
+            display: block !important;
+        }
+
+        .menu-button {
+            display: none;
+
+            i {
+                font-size: 35px;
+                color: white;
+            }
+
+            @media (max-width: 991px) {
+                display: block;
+                cursor: pointer;
+            }
+
+            .fa-times {
+                @media (max-width: 991px) {
+                    position: absolute;
+                    z-index: 3;
+                    top: 45px;
+                    right: 94px;
+                }
+
+                @media (max-width: 567px) {
+                    right: 17px;
+                }
+            }
+
+        }
+
+        nav {
+            ul li {
+                list-style: none;
+                padding: 0 37px 0 0;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+
+                @media (max-width: 1199px) {
+                    padding-right: 20px;
+                }
+
+                @media (max-width: 991px) {
+                    margin-top: 30px;
+                    padding: 0;
+                    width: 111px;
+                }
+
+                &:nth-child(7) {
+                    padding-right: 0;
+                }
+
+
+                a {
+                    color: white;
+                    position: relative;
+                    padding-bottom: 5px;
+
+                    &:hover {
+                        text-shadow: 0px 0px 5px;
+                        color: #FC2327;
+
+                        &::after {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 3px;
+                        width: 0;
+                        background: white;
+                        box-shadow: 0px 0px 2px black;
+                        border-radius: 10px;
+                        bottom: -5px;
+                        right: 0;
+                        transition: .5s;
+                    }
+                }
+
+                .lets-talk {
+                    color: white;
+                    text-decoration: none;
+                    background: #FC2327;
+                    border-radius: 8px;
+                    padding: 15px 31px;
+                    transition: 0.8s all ease;
+                    border: 1px solid transparent;
+
+                    
+                        &::after {
+                            display: none;
+                        }
+
+                    &:hover {
+                        background: transparent;
+                        border: 1px solid #FC2327;
+                        color: white;
+                        text-shadow: inherit;
+                    }
+
+                    @media (max-width: 1440px) {
+                        padding: 15px 22px;
+                    }
+                    @media (max-width: 991px) {
+                     padding: 9px 10px;
+                    }
+                }
+            }
+        }
+
+        nav {
+            
+            .menu-link {
+                display: flex;
+                align-items: center;
+                margin: 0;
+
+                @media (max-width: 991px) {
+                    display: none;
+                }
+
+            }
+
+            .mobile-menu-link {
+                @media (max-width: 991px) {
+                    position: absolute;
+                    left: 0;
+                    padding: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 0;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        } 
+           
+
+
+    }
+
+
+}

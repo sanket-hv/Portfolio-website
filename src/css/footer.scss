@@ -1,0 +1,167 @@
+.footer-bg {
+    background-color: #002144;
+    color: white;
+
+    .footer-main {
+        padding: 100px 0 52px;
+
+        @media (max-width: 991px) {
+            padding: 50px 0 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-icon a img {
+            padding-right: 28px;
+
+            @media (max-width: 991px) {
+                padding-right: 15px;
+            }
+        }
+
+        .tablet-footer {
+            display: none;
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+            .profile-footer {
+                text-align: end;
+            }
+        }
+        .tablet-footer1 {
+            @media (max-width: 991px) {
+                display: none;
+            }
+            .profile-footer {
+                margin-top: -48px;
+                text-align: end;
+
+                @media (max-width: 1199px) {
+                    margin-top: -18px;
+                }
+            }
+        }
+
+        .footer-contact {
+
+            @media (max-width: 567px) {
+                margin-top: 40px;
+            }
+            @media (max-width: 991px) {
+                margin-top: 60px;
+            }
+            h2 {
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 20px;
+                color: #FFFFFF;
+                padding-bottom: 22px;
+                margin: 0;
+            }
+
+            p {
+                border: 2px solid #FC2327;
+                width: 68.5px;
+                margin: 0;
+                background: #FC2327;
+            }
+
+            .footer-call {
+                padding-top: 38px;
+                display: flex;
+                align-items: center;
+
+                @media (max-width: 567px) {
+                    padding-top: 28px;
+                }
+
+                &:last-child {
+                    padding-top: 32px;
+
+                    @media (max-width: 567px) {
+                        padding-top: 15px;
+                    }
+    
+                }
+
+                .footer-contact-logo {
+                    background-color: #2A9DF4;
+                    text-decoration: none;
+                    display: flex;
+                    width: 34px;
+                    padding: 10px 8px;
+                    border-radius: 50%;
+                    margin-right: 18px;
+                }
+            }
+        }
+        .profile-footer {
+
+                @media (max-width: 567px) {
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: center;
+                }
+            img {
+                width: 294px;
+
+                @media (max-width: 1199px) {
+                    width: 214px;
+                }
+                
+                @media (max-width: 991px) {
+                    width: 70%;
+                }
+            }
+        }
+        .footer-logo p {
+            color: white;
+            font-family: 'Poppins';
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 26px 0 24px 0;
+            margin: 0;
+            width: 300px;
+
+            
+            @media (max-width: 991px) {
+                width: 240px;
+            }
+            @media (max-width: 567px) {
+                width: 100%;
+            }
+
+        }
+
+        .footer-icon span {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #EAECF0;
+            padding-right: 16px;
+        }
+    }
+
+    .footer-copyright p {
+        background: #122B44;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding: 13px 0;
+        margin: 0;
+
+        @media (max-width: 375px) {
+            font-size: 13px;
+        }   
+    }
+    }
+

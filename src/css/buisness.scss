@@ -1,0 +1,170 @@
+.bg-header {
+    .header-it-business-section {
+        position: relative;
+
+        .content {
+            color: white;
+            margin-top: 160px;
+            font-family: 'Montserrat';
+            position: relative;
+
+            h2 {
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 70px;
+                margin: 0;
+                width: 600px;
+
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                margin: 0;
+                padding: 30px 0 35px 0;
+                width: 600px;
+            }
+
+            a {
+                background: #2A9DF4;
+                border-radius: 14px;
+                padding: 12px 22px;
+                color: white;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 70px;
+                letter-spacing: 2px;
+            }
+
+            .content-experience {
+                padding-top: 46px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .content-icon {
+                    display: flex;
+                    align-items: center;
+
+                    .img-1 {
+                        display: flex;
+                        align-items: center;
+                        border: 3px solid white;
+                        border-radius: 50%;
+                        padding: 8px;
+                    }
+
+                    .img1-bg {
+                        background: rgba(255, 255, 255, 0.3);
+                        padding: 11px;
+                        border-radius: 50%;
+                    }
+
+                    .img2-bg {
+                        background: rgba(255, 255, 255, 0.3);
+                        padding: 15px;
+                        border-radius: 50%;
+                    }
+
+                    h6 {
+                        margin: 0;
+                        font-size: 20px;
+                        line-height: 24px;
+                        padding-left: 11px;
+                        color: #CECECE;
+                        font-weight: 400;
+                        letter-spacing: 0.6px;
+                    }
+
+                    span {
+                        color: white;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+
+                    .support {
+                        padding-left: 11px;
+                    }
+                }
+
+                .content-icon:nth-child(1) {
+                    width: 181px;
+                }
+
+                .content-icon:nth-child(2) {
+                    position: relative;
+                    width: 216px;
+
+                }
+                .content-icon:nth-child(3) {
+                    width: 154px;
+                }
+                .content-icon:nth-child(2)::after {
+                    content: '';
+                    border-right: 3px solid #C7C7C7;
+                    position: absolute;
+                    height: 62px;
+                    left: -21px;
+                }
+
+                .content-icon:nth-child(2)::before {
+                    content: '';
+                    border-right: 3px solid #C7C7C7;
+                    position: absolute;
+                    height: 62px;
+                    right: -23px;
+                }
+
+
+            }
+        }
+
+        .content-image {
+            padding-top: 102px;
+        }
+
+    }
+    .header-it-business-section::before {
+        content: '';
+        position: absolute;
+        background-image: url('../assests/images/buisness/shape-2\ 1.png');
+        width: 139px;
+        height: 95px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 0;
+        top: 224px;
+    }
+    .header-it-business-section::after {
+        content: '';
+        position: absolute;
+        background-image: url('../assests/images/buisness/creative-hand\ 1.png');
+        width: 234px;
+        height: 243px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: 0;
+        top: 560px;
+        bottom: 0;
+    }
+}
+
+.header-it {
+    position: relative;
+}
+
+.header-it::after {
+    content: '';
+    position: absolute;
+    background-image: url('../assests/images/buisness/shape1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 98px;
+    height: 95px;
+    right: 0;
+    top: 57%;
+}
