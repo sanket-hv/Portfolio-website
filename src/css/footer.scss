@@ -1,6 +1,36 @@
 .footer-bg {
     background-color: #002144;
     color: white;
+    position: relative;
+
+    .back-top {
+
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        border-radius: 8px;
+        right: 20px;
+        bottom: 20px;
+        z-index: 99;
+        background-color: #FC2327;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+
+        &:hover {
+            background-color: #FB373A;
+            transform: translateY(-3px);
+            transition-duration: .2s;
+        }
+        svg {
+            font-size: 20px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 
     .footer-main {
         padding: 100px 0 52px;

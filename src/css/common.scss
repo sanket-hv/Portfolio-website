@@ -1,12 +1,13 @@
+
 .img_animation{
-    animation: myfirst 3s infinite;
-    animation-direction:alternate-reverse;
+    animation: myfirst 3s infinite alternate-reverse;
     position: relative;
 }
 
 @keyframes myfirst {
-   from { top: -30px; }
-   to { top: 30px; }
+   from { top: -20px; }
+   to { top: 20px; }
+    
 }
 
 .hover-effect {

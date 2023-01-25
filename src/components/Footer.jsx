@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import call from '../assests/images/footer/call.png'
 import facebook from '../assests/images/footer/facebook.png'
 import profile from '../assests/images/footer/profile.png'
@@ -6,8 +6,35 @@ import linked_in from '../assests/images/footer/linked-in.png'
 import logo from '../assests/images/footer/logo.png'
 import mail from '../assests/images/footer/mail.png'
 import twitter from '../assests/images/footer/twitter.png'
+import { FaArrowUp } from "react-icons/fa";
+
 
 const Footer = () => {
+
+    const [visible, setVisible] = useState(false)
+     
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 500){
+      setVisible(true)
+    } 
+    else if (scrolled <= 500){
+      setVisible(false)
+    }
+  }; 
+
+
+    const backTop = ()=>{
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth'
+            /* you can also use 'auto' behaviour
+               in place of 'smooth' */
+          });
+    }
+
+    window.addEventListener('scroll', toggleVisible);
+
   return (
     <>
      <footer className="footer-bg">
@@ -67,6 +94,13 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        {
+            visible && 
+            <div className='back-top' onClick={backTop}>
+            <FaArrowUp/>
+            </div>
+        }
+       
         <div className="footer-copyright">
             <p>All rights reserved &#169; 2022 Sanket Vanani</p>
         </div>

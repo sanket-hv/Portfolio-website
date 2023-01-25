@@ -5,7 +5,7 @@ const ServiceSlider = (props) => {
         <>
             {/* <div className='row g-0 m-0'> */}
             <div className="col-12 col-lg-6 g-0">
-                <div className={`d-inline-block explore-services-img1`} data-hover={props.content}>
+                <div className={`d-inline-block explore-services-img1`}>
                     <div className={`explore-web${props.number}`} data-hover = {props.content}>
                         <img src={props.img} alt="" />
                     </div>

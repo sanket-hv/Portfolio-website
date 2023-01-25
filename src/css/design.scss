@@ -75,28 +75,28 @@
                 background-size: contain;
                 top: -91px;
                 left: 110px;
+                animation: myfirst 3s infinite alternate-reverse;
+
+                
+                @media (max-width: 1440px) {
+                    width: 152px;
+                    height: 152px;
+                    top: -61px;
+                    left: 242px;
+                }
 
                 @media (max-width: 1199px) {
                     left: 152px !important;
-                    top: -53px !important;
                 }
 
                 @media (max-width: 991px) {
                     left: -9px !important;
-                    height: 152px !important;
-                    width: 152px !important;
                 }
 
                 @media (max-width: 567px) {
-                    width: 122px !important;
-                    height: 122px !important;
-                }
-
-                @media (max-width: 1440px) {
-                    width: 152px;
-                    height: 152px;
-                    top: -71px;
-                    left: 282px;
+                    width: 112px !important;
+                    height: 112px !important;
+                    left: -19px !important;
                 }
 
                 @media (max-width: 375px) {
@@ -116,22 +116,22 @@
                 background-size: contain;
                 top: -27px;
                 right: 160px;
+                animation: myfirst 3s infinite alternate-reverse;
+                
 
                 @media (max-width: 1199px) {
                     right: 220px !important;
                 }
 
                 @media (max-width: 991px) {
-                    right: 40px !important;
-                    width: 132px !important;
-                    height: 132px !important;
+                    right: 60px !important;
+                    width: 102px !important;
+                    height: 102px !important;
 
                 }
 
                 @media (max-width: 567px) {
                     right: 0 !important;
-                    width: 102px !important;
-                    height: 102px !important;
                 }
 
                 @media (max-width: 1440px) {
