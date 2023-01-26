@@ -1,6 +1,5 @@
 import React from 'react'
 import calender from '../assests/images/meeting/calander.png'
-import meeting_icon from '../assests/images/meeting/meeting-icon.png'
 import { PopupButton } from 'react-calendly';
 
 const Meeting = () => {
@@ -14,6 +13,7 @@ const Meeting = () => {
                 <h1>Book A Meeting In Calendly</h1>
                 <div>
                   <PopupButton
+                  styles={{overflow : 'hidden !important'}}
                    className='book-meeting-button'
                     url="https://calendly.com/abhi-jiyawebsolutions/30min"
                     rootElement={document.getElementById('root')}

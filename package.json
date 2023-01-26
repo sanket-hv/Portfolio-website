@@ -17,6 +17,7 @@
     "mdbreact": "^5.2.0",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
+    "react-calendar": "^4.0.0",
     "react-calendly": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
