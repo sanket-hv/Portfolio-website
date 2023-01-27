@@ -35,7 +35,7 @@ const Client = () => {
                 <div className="client-say-main">
                     <div className="container">
                         {/* <div className='row'> */}
-                            <Slider className='testimonial' {...settings} >
+                            <Slider autoplay = {true} className='testimonial' {...settings} >
                                 <TestimonialSlider img1={client_img1} rating={client_rating} />
                                 <TestimonialSlider img1={client_img2} rating={client_rating} />
                                 <TestimonialSlider img1={client_img3} rating={client_rating} />

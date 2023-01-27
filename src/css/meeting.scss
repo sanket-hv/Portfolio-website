@@ -58,6 +58,13 @@
             font-weight: 400;
             position: relative;
             border: none;
+            transition: .8s all ease;
+            border: 2px solid transparent;
+
+            &:hover {
+                border: 2px solid #2A9DF4;
+                background: black;
+            }
 
             &::before {
                 content: '';

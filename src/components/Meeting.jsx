@@ -32,6 +32,9 @@ const Meeting = () => {
           </div>
         </div>
       </section>
+      <script>
+        
+      </script>
     </>
   )
 }

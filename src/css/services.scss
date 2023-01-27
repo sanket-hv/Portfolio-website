@@ -21,6 +21,47 @@
         }
     }
 
+    .active {
+        animation: rocket 5s;
+
+        @keyframes rocket {
+            from {
+                top: 155px;
+                right: -22px;
+            }
+
+            to {
+                top: -600px;
+                right: 600px;
+            }
+        }
+
+    }
+
+    .rocket {
+        content: '';
+        position: absolute;
+        right: -22px;
+        top: 155px;
+        bottom: 0;
+        z-index: 99;
+
+        img {
+            @media (max-width: 1850px) {
+                width: 119px;
+            }
+        }
+
+        @media (max-width: 1850px) {
+            top: 205px;
+        }
+
+        @media (max-width: 1366px) {
+            display: none;
+        }
+
+    }
+
     .container {
 
         .explore-services-img1 {
@@ -51,55 +92,58 @@
                 // left: 0;
                 // width: fit-content;
                 // margin: 0 auto;
-            
-            &:hover::before {
-                visibility: visible;
-                opacity: 1;
-            }
 
-            &::before {
-                content: attr(data-hover);
-                visibility: hidden;
-                opacity: 0;
-                font-family: 'Poppins';
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 36px;
-                color: #00244A;
-                padding: 20px 0;
-                background-color: #FFFFFF;
-                box-shadow: 4px 5px 12px rgba(1, 57, 116, 0.09);
-                border-radius: 16px;
-                position: absolute;
-                z-index: 1;
-                left: 50%;
-                bottom: -29px;
-                transform: translateX(-50%);
-                width: 100%;
-                max-width: 401px;
-                transition: .5s;
-                text-align: center;
+                &:hover::before {
+                    visibility: visible;
+                    opacity: 1;
+                    bottom: -29px;
+                }
 
-                @media (max-width: 1440px) {
+                &::before {
+                    content: attr(data-hover);
+                    visibility: hidden;
+                    opacity: 0;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #00244A;
+                    padding: 20px 0;
+                    background-color: #FFFFFF;
+                    box-shadow: 4px 5px 12px rgba(1, 57, 116, 0.09);
+                    border-radius: 16px;
+                    position: absolute;
+                    z-index: 1;
+                    left: 50%;
+                    bottom: -100px;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    max-width: 401px;
+                    transition: .8s all ease;
+                    text-align: center;
+
+                    @media (max-width: 1440px) {
                         padding: 13px 0;
                         font-size: 18px;
                         max-width: 351px;
-                }
+                    }
 
-                @media (max-width: 567px) {
-                    font-size: 14px;
-                    padding: 7px 0;
-                    bottom: -25px;
-                    max-width: 251px;
-                }
-                @media (max-width: 320px) {
-                    font-size: 13px;
-                    padding: 5px 0;
-                    bottom: -22px;
-                    max-width: 201px;
+                    @media (max-width: 567px) {
+                        font-size: 14px;
+                        padding: 7px 0;
+                        bottom: -25px;
+                        max-width: 251px;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 13px;
+                        padding: 5px 0;
+                        bottom: -22px;
+                        max-width: 201px;
+                    }
                 }
             }
-        }
+
             //     @media (max-width: 567px) {
             //         bottom: -27px;
             //     }
@@ -120,14 +164,14 @@
             //         border-radius: 16px;
             //         margin: 0 auto;
 
-           
+
 
             //         @media (max-width: 1440px) {
             //             padding: 13px 67px;
             //             font-size: 18px;
             //         }
 
-          
+
             //     }
             // }
 
@@ -135,29 +179,7 @@
 
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        background-image: url('../assests/images/services/services-image.png');
-        width: 199px;
-        height: 230px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        right: -22px;
-        top: 155px;
-        bottom: 0;
 
-
-        @media (max-width: 1850px) {
-            width: 119px;
-            top: 205px;
-        }
-
-        @media (max-width: 1366px) {
-            display: none;
-        }
-
-    }
 
 
     h1 {

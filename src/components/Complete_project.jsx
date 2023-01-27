@@ -97,10 +97,12 @@ const Complete_project = () => {
             default:
                 break;
         }
-settoggledrop(false)
-document.querySelector('.complete-project-img').style.marginTop = '30px'
+        settoggledrop(false)
+        document.querySelector('.complete-project-img').style.marginTop = '30px'
 
     }
+
+   
 
     return (
         <>
@@ -113,17 +115,17 @@ document.querySelector('.complete-project-img').style.marginTop = '30px'
                             <h1 className='text-center'>Our Complete Projects</h1>
                             <div className={dropdown ? 'dropdown' : 'complete-project-heading'}>
                                 <div className='all-menu'>
-                                    <button className={optionValue==='All' ? 'active' : ''} value='all' onClick={dropdown ? mobiledrop : hanldeImage}>{window.innerWidth < 991 ? optionValue : 'All'} <img src={dropdown_icon} alt="" /></button>
+                                    <button className={optionValue === 'All' ? 'active' : ''} value='all' onClick={dropdown ? mobiledrop : hanldeImage}>{window.innerWidth < 991 ? optionValue : 'All'} <img src={dropdown_icon} alt="" /></button>
                                 </div>
 
                                 <div className={toggledrop ? 'catagory-programming' : 'category-drop'}>
                                     {
-                                        window.innerWidth < 991 && optionValue != 'All'  ?  <button value="all" className={optionValue==='All' ? 'active' : ''} onClick={hanldeImage} style = {{display : 'block'}}>All</button>:<></>
+                                        window.innerWidth < 991 && optionValue != 'All' ? <button value="all" className={optionValue === 'All' ? 'active' : ''} onClick={hanldeImage} style={{ display: 'block' }}>All</button> : <></>
                                     }
-                                    <button value="programing" className={optionValue==='Programming' ? 'active' : ''} onClick={hanldeImage}>Programming</button>
-                                    <button value='development' className={optionValue==='Development' ? 'active' : ''} onClick={hanldeImage}>Development</button>
-                                    <button value='design' className={optionValue==='Design' ? 'active' : ''} onClick={hanldeImage} style = { dropdown  ? { display : "block"  } : { display : 'inline' } }>Design</button>
-                                    <button value='application' className={optionValue==='Application' ? 'active' : ''} onClick={hanldeImage}>Application</button>
+                                    <button value="programing" className={optionValue === 'Programming' ? 'active' : ''} onClick={hanldeImage}>Programming</button>
+                                    <button value='development' className={optionValue === 'Development' ? 'active' : ''} onClick={hanldeImage}>Development</button>
+                                    <button value='design' className={optionValue === 'Design' ? 'active' : ''} onClick={hanldeImage} style={dropdown ? { display: "block" } : { display: 'inline' }}>Design</button>
+                                    <button value='application' className={optionValue === 'Application' ? 'active' : ''} onClick={hanldeImage}>Application</button>
                                 </div>
 
                             </div>
@@ -132,38 +134,69 @@ document.querySelector('.complete-project-img').style.marginTop = '30px'
                             {
                                 All &&
                                 <>
-                                    <img src={project_1} alt="" />
-                                    <img src={project_2} alt="" />
-                                    <img src={project_3} alt="" />
-                                    <p />
-                                    <img src={project_4} alt="" />
-                                    <img src={project_5} alt="" />
-                                    <img src={project_6} alt="" />
+                                    <div className='img'>
+                                        <img src={project_1} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_2} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_3} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_4} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_5} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_6} alt="" />
+                                    </div>
                                 </>
                             }
 
                             {
                                 Programming && <>
-                                    <img src={project_2} alt="" />
-                                    <img src={project_3} alt="" />
+                                    <div className='img'>
+                                        <img src={project_2} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_3} alt="" />
+                                    </div>
                                 </>
                             }
                             {
                                 Development && <>
-                                    <img src={project_1} alt="" />
-                                    <img src={project_3} alt="" />
+                                    <div className='img'>
+                                        <img src={project_1} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_3} alt="" />
+                                    </div>
                                 </>
                             }
                             {
                                 Design && <>
-                                    <img src={project_4} alt="" />
-                                    <img src={project_5} alt="" />
-                                    <img src={project_6} alt="" /></>
+                                    <div className='img'>
+                                        <img src={project_4} alt="" />
+                                    </div>
+                                    <div className='img' >
+                                        <img src={project_5} alt="" />
+                                    </div>
+                                    <div className='img'>
+                                        <img src={project_6} alt="" />
+                                    </div>
+
+                                </>
                             }
                             {
                                 Application && <>
+                                    <div className='img'>
                                     <img src={project_5} alt="" />
+                                    </div>
+                                    <div className='img'>
                                     <img src={project_6} alt="" />
+                                    </div>
                                 </>
                             }
                         </div>

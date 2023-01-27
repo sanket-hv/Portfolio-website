@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import service_img_1 from '../assests/images/services/services-image1.png'
 import service_img_2 from '../assests/images/services/services-image2.png'
+import rocket from '../assests/images/services/services-image.png'
 import ServiceSlider from '../utils/ServiceSlider'
 
 const Services = () => {
@@ -25,12 +26,23 @@ const Services = () => {
             },
         ],
     };
+    const togglerocket = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 300){
+            document.querySelector('.rocket').classList.add('active')
+        } 
+        else if (scrolled <= 300){
+            document.querySelector('.rocket').classList.remove('active')
+        }
+      }; 
+
+    window.addEventListener('scroll', togglerocket);
     return (
         <>
             <section className="explore-services-section">
                 <div className="container">
                     <h1>Explore Our Services</h1>
-                    <Slider {...settings} className='services'>
+                    <Slider autoplay = {true} {...settings} className='services'>
                         <div className="row">
                         <ServiceSlider number={1} img={service_img_1} content = {'Web development'} />
                         </div>
@@ -44,7 +56,9 @@ const Services = () => {
                         <ServiceSlider number={1} img={service_img_2}  content = {'Dashboard Development'} />
                         </div>
                     </Slider>
-                    
+                </div>
+                <div className='rocket'>
+                    <img src={rocket} alt="" />
                 </div>
             </section>
 

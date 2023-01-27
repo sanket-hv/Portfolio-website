@@ -1,3 +1,10 @@
+iframe body{
+    overflow: hidden !important;
+}
+
+.Es8downQlxiASDyltHtn {
+    overflow: hidden !important;
+}
 .img_animation{
     animation: myfirst 3s infinite alternate-reverse;
     position: relative;
@@ -10,7 +17,7 @@
 }
 
 .hover-effect {
-    transition: .5s;
+    transition: 0.8s all ease !important;
     border: 2px solid transparent;
 
     &:hover {

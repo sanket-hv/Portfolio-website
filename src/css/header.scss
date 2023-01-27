@@ -77,11 +77,13 @@
                         &::after {
                             width: 100%;
                             left: 0;
+                            visibility: visible;
                         }
                     }
                     &::after {
                         content: '';
                         position: absolute;
+                        visibility: hidden;
                         height: 3px;
                         width: 0;
                         background: white;
@@ -89,7 +91,7 @@
                         border-radius: 10px;
                         bottom: -5px;
                         right: 0;
-                        transition: .8s;
+                        transition: .8s all ease;
                     }
                 }
 
