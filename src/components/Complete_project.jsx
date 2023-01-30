@@ -102,7 +102,7 @@ const Complete_project = () => {
 
     }
 
-   
+
 
     return (
         <>
@@ -135,22 +135,34 @@ const Complete_project = () => {
                                 All &&
                                 <>
                                     <div className='img'>
-                                        <img src={project_1} alt="" />
+                                        <div className='box'>
+                                            <img src={project_1} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_2} alt="" />
+                                        <div className='box' style={{backgroundColor : '#013974'}}>
+                                            <img src={project_2} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_3} alt="" />
+                                        <div className='box'>
+                                            <img src={project_3} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_4} alt="" />
+                                        <div className='box'>
+                                            <img src={project_4} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_5} alt="" />
+                                        <div className='box'> 
+                                            <img src={project_5} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_6} alt="" />
+                                        <div className='box'>
+                                            <img src={project_6} alt="" />
+                                        </div>
                                     </div>
                                 </>
                             }
@@ -158,33 +170,47 @@ const Complete_project = () => {
                             {
                                 Programming && <>
                                     <div className='img'>
-                                        <img src={project_2} alt="" />
+                                    <div className='box' style={{backgroundColor : '#013974'}}>
+                                            <img src={project_2}  alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_3} alt="" />
+                                    <div className='box'>
+                                            <img src={project_3} alt="" />
+                                        </div>
                                     </div>
                                 </>
                             }
                             {
                                 Development && <>
                                     <div className='img'>
-                                        <img src={project_1} alt="" />
+                                    <div className='box'>
+                                            <img src={project_1} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_3} alt="" />
+                                        <div className='box'>
+                                            <img src={project_3} alt="" />
+                                        </div>
                                     </div>
                                 </>
                             }
                             {
                                 Design && <>
                                     <div className='img'>
-                                        <img src={project_4} alt="" />
+                                        <div className='box'>
+                                            <img src={project_4} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img' >
-                                        <img src={project_5} alt="" />
+                                    <div className='box'>
+                                            <img src={project_5} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                        <img src={project_6} alt="" />
+                                    <div className='box'>
+                                            <img src={project_6} alt="" />
+                                        </div>
                                     </div>
 
                                 </>
@@ -192,10 +218,14 @@ const Complete_project = () => {
                             {
                                 Application && <>
                                     <div className='img'>
-                                    <img src={project_5} alt="" />
+                                    <div className='box'>
+                                            <img src={project_5} alt="" />
+                                        </div>
                                     </div>
                                     <div className='img'>
-                                    <img src={project_6} alt="" />
+                                    <div className='box'>
+                                            <img src={project_6} alt="" />
+                                        </div>
                                     </div>
                                 </>
                             }

@@ -72,6 +72,12 @@
                 align-items: center;
                 justify-content: center;
                 margin: 0 30px 30px 0;
+                transition: .8s all ease;
+                cursor: pointer;
+
+                &:hover{
+                    transform: translateY(-10px);
+                }
 
 
                 img {

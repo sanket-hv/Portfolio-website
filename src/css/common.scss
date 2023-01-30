@@ -1,10 +1,11 @@
-iframe body{
-    overflow: hidden !important;
+.calendly-overlay .calendly-popup .calendly-popup-content {
+    height: 101%;
+
+    @media (max-width: 991px) {
+        height: 100%;
+    }
 }
 
-.Es8downQlxiASDyltHtn {
-    overflow: hidden !important;
-}
 .img_animation{
     animation: myfirst 3s infinite alternate-reverse;
     position: relative;

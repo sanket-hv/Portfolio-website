@@ -54,15 +54,6 @@ const Features = () => {
                                     <div className='card-img'>
                                         <img src={cloud} alt="" />
                                     </div>
-                                    {/* <img src={reactJS} alt=""/>
-                        <img src={angular} alt=""/>
-                        <img src={flutter} alt=""/>
-                        <img src={aws} alt=""/>
-                        <img src={mongoDB} alt=""/>
-                        <img src={SQL} alt=""/>
-                        <img src={nest} alt=""/>
-                        <img src={android} alt=""/>
-                        <img src={cloud} alt=""/> */}
                                 </div>
                             </div>
                         </div>
