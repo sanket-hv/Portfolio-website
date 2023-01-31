@@ -202,6 +202,7 @@
                     
                     &::before {
                         width: 140%;
+                        height: 200%;
                         visibility: visible;
                     }
                 }
@@ -213,7 +214,7 @@
                     background: conic-gradient(transparent ,transparent , transparent, red);
                     animation: animate 4s linear infinite;
                     width: 0;
-                    height: 200%;
+                    height: 0;
                     transition: .8s all ease;
 
                     @keyframes animate {

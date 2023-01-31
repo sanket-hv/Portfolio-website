@@ -36,10 +36,10 @@ const Client = () => {
                     <div className="container">
                         {/* <div className='row'> */}
                             <Slider autoplay = {true} className='testimonial' {...settings} >
-                                <TestimonialSlider img1={client_img1} rating={client_rating} />
-                                <TestimonialSlider img1={client_img2} rating={client_rating} />
-                                <TestimonialSlider img1={client_img3} rating={client_rating} />
-                                <TestimonialSlider img1={client_img1} rating={client_rating} />
+                                <TestimonialSlider name = 'James G. Calhoun' position = 'CEO of HRC Company' img1={client_img1} rating={client_rating} />
+                                <TestimonialSlider name = 'Shannon J' position = 'Manager' img1={client_img2} rating={client_rating} />
+                                <TestimonialSlider name = 'Bonnie Harris' position = 'CEO of Lorem Company' img1={client_img3} rating={client_rating} />
+                                <TestimonialSlider name = 'James G. Calhoun' position = 'CEO of HRC Company' img1={client_img1} rating={client_rating} />
                             </Slider>
                         {/* </div> */}
                     </div>

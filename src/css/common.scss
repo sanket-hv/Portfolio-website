@@ -6,15 +6,20 @@
     }
 }
 
-.img_animation{
+.img_animation {
     animation: myfirst 3s infinite alternate-reverse;
     position: relative;
 }
 
 @keyframes myfirst {
-   from { top: -20px; }
-   to { top: 20px; }
-    
+    from {
+        top: -20px;
+    }
+
+    to {
+        top: 20px;
+    }
+
 }
 
 .hover-effect {
@@ -26,6 +31,7 @@
         background: transparent !important;
     }
 }
+
 .container {
     width: 100%;
     max-width: 1320px;
@@ -187,23 +193,27 @@ h1 {
                 font-size: inherit;
                 border-radius: 50%;
 
+
                 @media (max-width: 567px) {
                     width: 12px;
                     height: 12px;
                 }
             }
 
-            button::before {
-                background-color: #D4D4D4;
-                opacity: 1;
-                font-size: inherit;
-                border-radius: 50%;
-                width: 15px;
-                height: 15px;
-
-                @media (max-width: 567px) {
-                    width: 12px;
-                    height: 12px;
+            button {
+                &::before {
+                    background-color: #D4D4D4;
+                    opacity: 1;
+                    font-size: inherit;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    transition: .5s all ease;
+    
+                    @media (max-width: 567px) {
+                        width: 12px;
+                        height: 12px;
+                    }
                 }
             }
         }

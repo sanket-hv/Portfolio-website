@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from "react-slick";
 import service_img_1 from '../assests/images/services/services-image1.png'
 import service_img_2 from '../assests/images/services/services-image2.png'
@@ -26,13 +26,22 @@ const Services = () => {
             },
         ],
     };
+ 
     const togglerocket = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300){
+        let scrolled = document.documentElement.scrollTop;
+        // console.log(scrolled)
+        
+        if (scrolled > 500){
             document.querySelector('.rocket').classList.add('active')
+            document.querySelector('.explore-services-section').style.overflowX = 'visible'
         } 
-        else if (scrolled <= 300){
+        else if (scrolled <= 300 ){
             document.querySelector('.rocket').classList.remove('active')
+            document.querySelector('.explore-services-section').style.overflowX = 'hidden'
+        }
+        if (scrolled > 900){
+            document.querySelector('.explore-services-section').style.overflowX = 'hidden'
+            console.log(scrolled);
         }
       }; 
 

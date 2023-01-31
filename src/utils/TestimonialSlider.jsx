@@ -10,7 +10,8 @@ const TestimonialSlider = (props) => {
                     <img className="client-img" src={props.rating} alt="" />
                     <div className="client-name">
                         <img src={props.img1} alt="" />
-                        <h5>Shannon J <br /> <span>Manager</span></h5>
+                        {/* <h5>James G. Calhoun <br /> <span>CEO of HRC Company</span></h5> */}
+                        <h5>{props.name} <br />{props.position}</h5>
                     </div>
                 </div>
             </div>
