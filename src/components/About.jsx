@@ -1,4 +1,3 @@
-import React from 'react'
 import buisness__img from '../assests/images/buisness/buisness-img.png'
 import subtract from '../assests/images/buisness/Subtract.png'
 import project_icon from '../assests/images/buisness/project-icon.png'

@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import Slider from "react-slick";
 import service_img_1 from '../assests/images/services/services-image1.png'
 import service_img_2 from '../assests/images/services/services-image2.png'

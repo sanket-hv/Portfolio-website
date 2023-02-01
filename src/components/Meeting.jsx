@@ -1,4 +1,3 @@
-import React from 'react'
 import calender from '../assests/images/meeting/calander.png'
 import { PopupButton } from 'react-calendly';
 

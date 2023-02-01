@@ -1,4 +1,3 @@
-import React from 'react'
 import creative_design_img from '../assests/images/create-design/creative-design-img.png'
 
 const Design = () => {

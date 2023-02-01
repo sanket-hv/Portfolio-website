@@ -1,4 +1,3 @@
-import React from 'react'
 import full_potential from '../assests/images/modern-fearures/full-potential-img.png'
 import nodejs from '../assests/images/modern-fearures/nodeJS.png'
 import reactJS from '../assests/images/modern-fearures/reactJS.png'

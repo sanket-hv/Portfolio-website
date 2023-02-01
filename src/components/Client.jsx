@@ -1,4 +1,3 @@
-import React from 'react'
 import client_bg1 from '../assests/images/client-say/client-bg1.png'
 import client_bg2 from '../assests/images/client-say/client-bg2.png'
 import client_img1 from '../assests/images/client-say/client-img1.png'

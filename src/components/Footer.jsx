@@ -1,13 +1,11 @@
 import React , {useState} from 'react'
 import call from '../assests/images/footer/call.png'
 import facebook from '../assests/images/footer/facebook.png'
-import profile from '../assests/images/footer/profile.png'
+import profile from '../assests/images/footer/profile.webp'
 import linked_in from '../assests/images/footer/linked-in.png'
 import logo from '../assests/images/footer/logo.png'
 import mail from '../assests/images/footer/mail.png'
 import twitter from '../assests/images/footer/twitter.png'
-import { FaArrowUp } from "react-icons/fa";
-
 
 const Footer = () => {
 
@@ -97,7 +95,7 @@ const Footer = () => {
         {
             visible && 
             <div className='back-top' onClick={backTop}>
-            <FaArrowUp/>
+            <i className="fa fa-arrow-up"></i>
             </div>
         }
        
